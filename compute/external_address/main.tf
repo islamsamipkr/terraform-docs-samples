@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+provider "google" {
+  project = "avian-amulet-378416"
+}
 # [START compute_regional_external_vm_address]
 resource "google_compute_address" "default" {
   name   = "my-test-static-ip-address"
